@@ -407,7 +407,7 @@ dialog::backdrop {
     padding-top: 120px;
   }
 
-  .header_text{
+  .header_text {
       font-size: 14px;
       line-height: 10px;
   }
@@ -416,11 +416,11 @@ dialog::backdrop {
     width: 100%;
   }
 
-  .card_image{
+  .card_image {
     max-height: 371px;
   }
 
-  .card_text{
+  .card_text {
     gap: 28px;
     line-height: 20px;
   }
@@ -438,7 +438,7 @@ dialog::backdrop {
     top: 22px;
     right: 11px;
   }
-  .card_button_container{
+  .card_button_container {
     height: 38px;
     margin-top: 6px;
   }
