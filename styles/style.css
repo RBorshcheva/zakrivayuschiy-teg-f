@@ -3,6 +3,7 @@
   font-family: 'Inter-Variable', sans-serif;
   background: var(--background-gradient);
   background-size: cover;
+  background-color: var(--background-color);
   background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -18,7 +19,7 @@
   margin: 102px auto 100px auto;
   border: 2px solid var(--accent-color);
   padding: 135px 0 25px;
-  font-family: "PressStart2P", sans-serif;
+  font-family: "PressStart2P", fantasy;
   font-weight: 400;
   text-transform: uppercase;
   background-color: var(--background-color);
@@ -52,18 +53,18 @@
   padding: 0;
   outline: transparent;
   background: transparent;
-  font-family: 'PressStart2P', sans-serif;
+  font-family: 'PressStart2P', fantasy;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   text-align: left;
   text-transform: uppercase;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .theme-menu__button:hover {
   opacity: 0.6;
-  cursor: pointer;
-  transition: 0.3s ease;
 }
 
 .theme-menu__button::before {
@@ -96,6 +97,7 @@
 .theme-menu__button:disabled::after {
   content: '▶';
   position: absolute;
+  top: 0px;
   left: -19px;
   font-size: 14px;
   line-height: 14px;
@@ -157,7 +159,7 @@
   border: 2px solid var(--accent-color);
   outline: transparent;
   color: var(--accent-color);
-  font-family: 'PressStart2P', sans-serif;
+  font-family: 'PressStart2P', fantasy;
   font-weight: 400;
   font-size: 14px;
   line-height: 12.6px;
@@ -184,33 +186,6 @@
 .heart:active .main-body {
   fill: #FF0000;
   transition: fill 0.3s linear 0.05s;
-}
-
-.like-icon.is-liked .contour {
-  fill: #FF0000;
-  transition: fill 0.3s linear 0.06s;
-}
-
-.like-icon.is-liked .core {
-  fill: #FF0000;
-  transition: fill 0.3s linear;
-}
-
-.like-icon.is-liked .main-body {
-  fill: #FF0000;
-  transition: fill 0.3s linear 0.05s;
-}
-
-
-.like-icon.is-liked .heart {
-  transform-origin: 50% 50%;
-  animation: heartScale 0.3s ease-in 0.1s;
-  animation-direction: alternate;
-}
-
-.like-icon.is-liked .sparks {
-  animation: sparksOpacity 0.3s ease-in 0.3s;
-  animation-direction: alternate;
 }
 
 .dialog_button {
@@ -272,7 +247,7 @@
   right: 25px;
   z-index: 900;
   opacity: 0.5;
-  font-family: 'PressStart2P', sans-serif;
+  font-family: 'PressStart2P', fantasy;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -298,25 +273,6 @@
 .button__text {
   color: var(--like-button-color);
   mix-blend-mode: difference;
-}
-
-.sparks {
-  opacity: 0;
-}
-
-.core {
-  fill: transparent;
-  transition: fill 0.3s linear 0.03s;
-}
-
-.main-body {
-  fill: transparent;
-  transition: fill 0.3s linear;
-}
-
-.contour {
-  fill: var(--accent-color);
-  transition: fill 0.1s linear;
 }
 
 .dialog_section {
@@ -357,7 +313,7 @@ dialog::backdrop {
 }
 
 .dialog_text {
-  font-family: 'PressStart2P', sans-serif;
+  font-family: 'PressStart2P', fantasy;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -403,7 +359,6 @@ dialog::backdrop {
 @media (width <= 375px) {
   .header {
     width: 100%;
-    min-height: 325px;
     padding-top: 120px;
   }
 
