@@ -168,26 +168,6 @@
   cursor: pointer;
 }
 
-.heart:hover .core {
-  fill: var(--accent-color);
-  transition: fill 0.3s linear;
-}
-
-.heart:hover .main-body {
-  fill: var(--accent-color);
-  transition: fill 0.3s linear 0.05s;
-}
-
-.heart:active .core {
-  fill: #FF0000;
-  transition: fill 0.3s linear;
-}
-
-.heart:active .main-body {
-  fill: #FF0000;
-  transition: fill 0.3s linear 0.05s;
-}
-
 .dialog_button {
   gap: 8px;
   margin: 52px auto 100px auto;
