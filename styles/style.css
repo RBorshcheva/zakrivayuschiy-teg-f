@@ -135,7 +135,7 @@
   flex-direction: column;
   gap: 28px;
   border-top: 2px solid var(--accent-color);
-  padding: 25px;
+  padding: 25px 28px 25px 25px;
   font-family: 'Inter-Variable', sans-serif;
   font-size: 18px;
   line-height: 20px;
@@ -356,8 +356,9 @@ dialog::backdrop {
   }
 
   .card_text {
-    gap: 28px;
-    line-height: 20px;
+    gap: 23px;
+    line-height: 21px;
+    padding-right: 24px;
   }
 
   .dialog_button {
@@ -373,8 +374,9 @@ dialog::backdrop {
     top: 22px;
     right: 11px;
   }
+
   .card_button_container {
     height: 38px;
-    margin-top: 6px;
+    margin-top: 5px;
   }
 }
